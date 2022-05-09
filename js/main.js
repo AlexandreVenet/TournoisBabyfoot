@@ -43,23 +43,23 @@ function FormValidate(e)
 }
 
 
-// function CreateDOMEntry(key,myString)
-// {
-//     let dataArray = myString.split('/');
-//     // console.table(dataArray);
-//     let tag = document.createElement('li');
-//     tag.id = key;
-//     tag.innerHTML = `
-//         <ul>
-//             <li>${dataArray[0]}</li>
-//             <li>${dataArray[1]}</li>
-//             <li>${dataArray[2]}</li>
-//             <li>${dataArray[3]} / ${dataArray[4]}</li>
-//             <li><input type="button" value="X"></li>
-//         </ul>
-//     `;
-//     DOMUl.appendChild(tag);
-// }
+function CreateDOMEntry(key,myString)
+{
+    let dataArray = myString.split('/');
+    // console.table(dataArray);
+    let tag = document.createElement('li');
+    tag.id = key;
+    tag.innerHTML = `
+        <ul>
+            <li>${dataArray[0]}</li>
+            <li>${dataArray[1]}</li>
+            <li>${dataArray[2]}</li>
+            <li>${dataArray[3]} / ${dataArray[4]}</li>
+            <li><input type="button" value="X"></li>
+        </ul>
+    `;
+    DOMUl.appendChild(tag);
+}
 
 // Pour le bouton supprimer
 function UlClick(e)
