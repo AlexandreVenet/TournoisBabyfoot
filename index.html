@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Baby tournois</title>
+</head>
+<body>
+
+    <header>
+        <h1>Baby tournois</h1>
+        <p>Données en LocalStorage</p>
+    </header>
+
+    <main>
+        <section>
+            <form name="formulaire">
+                <input type="date" name="matchDate" id="date">
+                <input type="text" name="matchTeam1" id="team1" placeholder="Team1" maxlength="12">
+                <input type="text" name="matchTeam2" id="team2" placeholder="Team2" maxlength="12">
+                <input type="number" name="matchScore1" id="score1" placeholder="0" min="0">
+                <input type="number" name="matchScore2" id="score2" placeholder="0" min="0">
+                <input type="submit" value="Entrer" id="DOMButton">
+            </form>
+        </section>
+        <section>
+            <ul id="DOMUl">
+                <!-- MODELE -->
+                <!-- <li>
+                    <ul>
+                        <li>00/00/0000</li>
+                        <li>Aaaaa</li>
+                        <li>Bbbb</li>
+                        <li>99 / 99</li>
+                        <li> <input type="button" value="X"> </li>
+                    </ul>
+                </li> -->
+                <!-- FIN MODELE -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
